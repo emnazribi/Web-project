@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WAFFI'S RESTO</title>
+    <link rel="icon" href="images/R.png" >
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="food.css">
+
+    
+
+</head>
+<body>
+
+    <!-- header section starts      -->
+
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>AT WAFFI</a>
+
+    <nav class="navbar">
+        <a class="active" href="#home">home</a>
+        <a href="#dishes">dishes</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#review">review</a>
+        <a href="#order">order</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart" id="heartButton"></a>
+        <a href="#" class="fas fa-shopping-cart" id="cartButton"></a>
+    </div>
+
+    
+
+</header>
+
+<!-- header section ends-->
+
+<!-- search form  -->
+
+<form action="" id="search-form">
+    <input type="search" placeholder="search here..." name="" id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+</form>
+
+   <!-- cart section start -->
+<div class="productsOnCart" id="hide" style="display: none;">
+    
+    <div class="top">
+        
+        <h3>Cart</h3>
+    </div>
+        <ul id="buyItems">
+           
+               
+                <li>
+                    <img class="box-img" src="images/dish-1.png" alt="">
+                     <h3 class="box-name">tasty food</h3>
+                     <span class="price"></span>  
+                 
+
+                <div>
+                    <div class="input-group plus-minus-input">
+                        <div class="input-group-button">
+                          <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
+                            <i class="fa fa-minus" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                        <input class="input-group-field" type="number" name="quantity" value="0">
+                        <div class="input-group-button">
+                          <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                          </button>
+                   
+                </div>
+            </li>
+
+                <button class="btn checkout hidden">Check out</button>
+           
+        </ul>
+    </div>
+
+        <!-- cart section end -->
+
+        <!-- favourite list srart-->
+
+        <div class="productsOnCart" id="hide2" style="display: none;">
+    
+            <div class="top">
+                
+                <h3>Favorite list</h3>
+            </div>
+                </div>
+                <!-- favourite list end-->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="swiper-container home-slider">
+
+        <div class="swiper-wrapper wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>our special dish</span>
+                    <h3>spicy noodles</h3>
+                    <a href="#" class="btn">order now</a>
+                </div>
+                <div class="image">
+                    <img src="pasta.png" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>our special dish</span>
+                    <h3>fried chicken</h3>
+                    <a href="#" class="btn">order now</a>
+                </div>
+                <div class="image">
+                    <img src="fried chicken kbira.png" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="content">
+                    <span>our special dish</span>
+                    <h3>hot pizza</h3>
+                    <a href="#" class="btn">order now</a>
+                </div>
+                <div class="image">
+                    <img src="pizza kbira.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- home section ends -->
+    
+
+ <!-- dishes section starts  -->
+
+<section class="dishes" id="dishes">
+
+    <h3 class="sub-heading"> our dishes </h3>
+    <h1 class="heading"> popular dishes </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            
+            <img class="box-img" src="burger.jpg" alt="">
+            <h3 class="box-name">Big Tasty</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="price">10.500TND</span>
+            <a href="#" class="btn clk">add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            
+            <img class="box-img"  src="chiken tenders.jpg" alt="">
+            <h3 class="box-name">Chicken Tenders</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="price">13.800TND</span>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+           
+            <img class="box-img"  src="lasagnes.jpg" alt="">
+            <h3 class="box-name">Lasagna</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="price">9.500TND</span>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            
+            <img class="box-img"  src="cesar salad.jpg" alt="">
+            <h3 class="box-name">Cesar Salad</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="price">9.800TND</span>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            
+            <img class="box-img" src="pizza.jpg" alt="">
+            <h3 class="box-name">Pizza</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="price">11.000TND</span>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            
+            <img class="box-img" src="club sandwich.jpg" alt="">
+            <h3 class="box-name">Club Sandwich</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="price">11.300TND</span>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            
+            <img class="box-img" src="tasty food.jpg" alt="">
+            <h3 class="box-name">Dessert</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="price">6.600TND</span>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- dishes section ends -->
+
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h3 class="sub-heading"> about us </h3>
+    <h1 class="heading"> why choose us? </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="plat.png" alt="">
+        </div>
+
+        <div class="content">
+            <h3>best food in the country</h3>
+            <p>Needless to say, exploring a new city is always thrilling but even more so when it offers the promise of good or interesting food.</p>
+            <p>We haven’t been to every country in the world but sure we will.</p>
+        </p>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>free delivery</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>easy payments</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-headset"></i>
+                    <span>24/7 service</span>
+                </div>
+            </div>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+    <h3 class="sub-heading"> our menu </h3>
+    <h1 class="heading"> today's speciality </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="malfouf.png" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="box-name">Malfouf</h3>
+                <p>It's a Tunisian street food sandwich, made with homemade bread and stuffed with tuna, chicken and all kinds of raw vegetables according to your choices and desires.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price"><br/>5.700 TND</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="spaghetti.jpeg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="box-name">Spaghetti</h3>
+                <p>Spaghetti may just be the best known pasta shape with tomato sauce and meatballs, but it can also be a great complement to chunky sauces like Bolognese, or with light or cream sauces.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price"><br/>9.400 TND</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="soupe.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="box-name">Soup</h3>
+                <p>It's a liquid food prepared by cooking meat, poultry, fish, vegetables with seasonings in water, stock, milk, or some other liquid medium. We have clear soups and thick soups.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price"><br/>8.800TND</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="pizza1.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="box-name">Pizza Margherita</h3>
+                <p>An Italian pizza that historically could only be made in a wood burning oven using flatbread with only three ingredients; buffalo mozzarella cheese, red tomatoes, and green basil.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price"><br/>11.300TND</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="steak frittes.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="box-name"> Steak and chips</h3>
+                <p>is a dish consisting of steak paired with French fries. It is commonly served in European brasseries, and is considered by some to be the national dish of Belgium.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price"><br/>17.200TND</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="riz-aux-crevettes.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="box-name">Shrimp Rice</h3>
+                <p>Classic Shrimp Fried Rice with fresh shrimp, rice, green onions, peas, carrots, and sesame oil.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price"><br/>19.900TND</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="poisson.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="box-name">Grilled Fish</h3>
+                <p>Classic Shrimp Fried Rice with fresh shrimp, rice, green onions, peas, carrots, and sesame oil.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price"><br/>21.750TND</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="3ejja.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="box-name">Ojja</h3>
+                <p>It is a Tunisian dish made from eggs, known for its ease of preparation.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price"><br/>14.900TND</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="waffles.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="box-name">Waffles</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price"><br/>11.200TND</span>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="jus.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3 class="box-name">Fruit Juice</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price"><br/>7.400TND</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h3 class="sub-heading"> customer's review </h3>
+    <h1 class="heading"> what they say </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="boy logo.jpg" alt="photo">
+                    <div class="user-info">
+                        <h3>Khaled Zgueb</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Very good food and the staff is at the top, very caring.<br/>You have to try the hummus, excellent!<br/></p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="boy logo.jpg" alt="photo">
+                    <div class="user-info">
+                        <h3>Mohamed Trabelsi</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Great !!!!
+                    I highly recommend, the staff takes care of you. We eat very well... Really on top!!!</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="girl logo.jpg" alt="photo">
+                    <div class="user-info">
+                        <h3>Manel Guiras</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Everything was beautiful, delicious and authentic ! I recommend it and i will surely come back !</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="boy logo.jpg" alt="photo">
+                    <div class="user-info">
+                        <h3>Amenallah Dahri</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Wonderful ! The setting is very nice. Very welcoming staff ! Very tasty Turnisian dishes !Strongly recommend</p>
+            </div>
+
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- review section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+    <h3 class="sub-heading"> order now </h3>
+    <h1 class="heading"> free and fast </h1>
+
+    <form action="">
+
+        <div class="inputBox">
+            <div class="input">
+                <span>your name</span>
+                <input type="text" placeholder="enter your name">
+            </div>
+            <div class="input">
+                <span>your number</span>
+                <input type="number" placeholder="enter your number">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your order</span>
+                <input type="text" placeholder="enter food name">
+            </div>
+            <div class="input">
+                <span>additional food</span>
+                <input type="test" placeholder="extra with food">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>how musch</span>
+                <input type="number" placeholder="how many orders">
+            </div>
+            <div class="input">
+                <span>date and time</span>
+                <input type="datetime-local">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your address</span>
+                <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="input">
+                <span>your message</span>
+                <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <input type="submit" value="order now" class="btn">
+
+    </form>
+
+</section>
+
+<!-- order section ends -->
+
+<!-- footer section starts  -->
+ 
+<section class="footer">
+ 
+    <div class="icons-container">
+ 
+       <div class="icons">
+          <i class="fas fa-clock"></i>
+          <h3>opening hours</h3>
+          <p>08:00am to 11:00pm</p>
+       </div>
+ 
+       <div class="icons">
+          <i class="fas fa-phone"></i>
+          <h3>phone</h3>
+          <p>974452390</p>
+         
+       </div>
+ 
+       <div class="icons">
+          <i class="fas fa-envelope"></i>
+          <h3>email</h3>
+          <p>waffi-resto@gmail.com</p>
+          
+       </div>
+ 
+       <div class="icons">
+          <i class="fas fa-map"></i>
+          <h3>address</h3>
+          <p>Lac1</p>
+       </div>
+ 
+    </div>
+ 
+    <div class="share">
+       <a href="https://www.facebook.com/espace.diverso/" class="fab fa-facebook-f"></a>
+       <a href="https://www.youtube.com/watch?v=6TFkPuLiWhQ" class="fab fa-youtube"></a>
+       <a href="https://www.instagram.com/diver_somarket/?hl=fr" class="fab fa-instagram"></a>
+       <a href="https://www.linkedin.com/in/wafi-benjeddou-5a6814191/" class="fab fa-linkedin"></a>
+    </div>
+ 
+    <div class="credit"> created by <span>Emna & Zaineb</span> | all rights reserved! </div>
+ 
+ </section>
+ 
+ <!-- footer section ends  -->
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- custom js file link  -->
+<script src="script.js"></script>
+<script src="shopping-cart.js"></script>
+</body>
+</html>
